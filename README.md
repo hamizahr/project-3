@@ -16,16 +16,16 @@ This project is to attempt at classifying posts from Reddit, and to identify if 
 
 
 1. Data Scraping
-Sources derived from Reddit Pushift API based scraping from 2 subreddits, both need to hit a minimum of 5000 posts and each post to contained 20 words and more. Posts with empty contents and emojis to be discared. Subreddits chosen was r/personalfinance and r/legaladvice
+- Sources derived from Reddit Pushift API based scraping from 2 subreddits, both need to hit a minimum of 5000 posts and each post to contained 20 words and more. Posts with empty contents and emojis to be discared. Subreddits chosen was r/personalfinance and r/legaladvice
 
 2. EDA
-Appending title and selftext into 1 column and dropping duplicates and posts that have less than 20 words. After appending the columns, the subreddit column consists of NaN values this was then filled in. After cleaning up the following, the 2 dataframes then was merged to create a single dataframe for the next steps.
+- Appending title and selftext into 1 column and dropping duplicates and posts that have less than 20 words. After appending the columns, the subreddit column consists of NaN values this was then filled in. After cleaning up the following, the 2 dataframes then was merged to create a single dataframe for the next steps.
 
 3. Pre-Processing & Modelling
-Countvectorizer with stopwords hyperparameter was used to convert text data into a structured numeric df. TfidrVectorizer was also used to compared against the countvectorizer to see if there's a difference.
+- Countvectorizer with stopwords hyperparameter was used to convert text data into a structured numeric df. TfidrVectorizer was also used to compared against the countvectorizer to see if there's a difference.
 
 4. Evaluation
-We evaluate the metrics of the chosen model which is the MultiNomial Naive Bayes that we have chosen by creating a matrix table to compare and make comparisons of the different metrics.
+- We evaluate the metrics of the chosen model which is the MultiNomial Naive Bayes that we have chosen by creating a matrix table to compare and make comparisons of the different metrics.
 
 
 ### Conclusion
